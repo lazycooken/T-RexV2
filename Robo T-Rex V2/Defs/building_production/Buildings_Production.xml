@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <RecipeDef>
+      <defName>CreateCyberTRex</defName>
+      <label>Create TRex Cybernetic unit</label>
+      <description>Create a blank TRex Cybernetic unit from Plasteel and components. A extremely large melee unit that can easily kill a man.</description>
+      <jobString>Making Android</jobString>
+      <allowMixingIngredients>false</allowMixingIngredients>
+	  <skillRequirements>
+		<Crafting>10</Crafting>
+      </skillRequirements>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Plasteel</li>
+               </thingDefs>
+            </filter>
+            <count>200</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>ComponentIndustrial</li>
+               </thingDefs>
+            </filter>
+            <count>20</count>
+         </li>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>Uranium</li>
+               </thingDefs>
+            </filter>
+            <count>60</count>
+         </li>
+      </ingredients>
+      <products>
+         <TRexAndroidGeneratorAI>1</TRexAndroidGeneratorAI>
+      </products>
+      <workAmount>16500</workAmount>
+	  <unfinishedThingDef>UnfinishedAndroid</unfinishedThingDef>
+      <workSkill>Crafting</workSkill>
+    <effectWorking>Repair</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
+	 <recipeUsers>
+		<li>AndroidProductionVat</li>
+      </recipeUsers>
+
+	</RecipeDef>
+
+</Defs>
